@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box; 
+    padding: 0px;
+    margin: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header{
+    background-color: #282828;
+    
+}
+
+.encabezado_logo{
+    height: 100px;    
+}
+
+.encabezado_figure{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.encabezado_nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.nav_hv{
+    color:  yellow;
+    text-decoration: none;
+   
+}
+
+
+main{
+    padding: 25px
+}
+
+
+
+/*MAIN INDEX   */
+
+.main_figure{
+    display: flex;
+    justify-content: center;
+}
+
+.main_img{
+    height: 300px;
+    
+
+}
+.main_p{
+    padding: 15px;
+    line-height: 1.5;
+    white-space: pre-line;
+    justify-content: center;
+    text-align: center;
+}
+
+.main_titulo{
+    text-align: center;
+}
+
+/*MAIN CATALOGO  */
+
+#main{
+    display:flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.catalogo_h4{
+    text-align: center;
+}
+
+.catalogo_p{
+    text-align: center;
+}
+
+.catalogo_img{
+    height: 200px;
+    width: 100px;
+    border: 1px solid black;
+    -webkit-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.5);
+    padding: 20px;
+    
+}
+
+
+/*MAIN FORM   */
+.form{
+    display:flex;
+    flex-direction: column;
+    padding-inline: 20%;
+    margin-block-end: 40px;
+
+ 
+}
+.form label,.form input,.form textarea,.form select{
+    font-size: inherit;
+    font-family: inherit;
+    padding-block: 10px;
+    padding-inline: 5px;
+    margin-block-end: 10px;
+}
+.form input{
+    border: 1px solid #333;
+}
+.form textarea{
+    border: 1px solid #333;
+    min-height: 300px;
+}
+.form button{
+    font-size: inherit;
+    color: #ffffff;
+    background-color: #333333;
+    padding-block: 20px;
+    margin-block-start: 15px;
+    border-radius: 6px;
+    border:none;
+}
+
+
+.main_contacto{
+    padding-inline: 20%;
+    margin-block-end: 40px;
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.footer{
+    background-color: #282828;
+    padding: 15px;
+    
+}
+.footer_p{
+    color: black;
+    text-align: center;
+}
+
+.footer_nav{
+    padding: 15px;
+    margin: 15px;
+    gap: 30px;
+    text-align: center;
+
+}
+
+.footer_hv{
+    padding: 15px;
+    text-decoration: none;
+}
+
+.img_hv{
+    height: 50px;
+}
+
+
+
+/*MEDIA*/
+
+@media (min-width: 1250px) {
+    
+   
+
+
+    #main{
+        display: grid;
+        grid-template-columns: repeat(7, 170px);
+        grid-gap: 15px; /* Espacio entre las imágenes, ajusta según tus necesidades */
+        
+        
+    }
+
+    .catalogo_articulo{
+        text-align: center;
+    }
+
+}
